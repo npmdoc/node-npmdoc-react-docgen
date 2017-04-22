@@ -1,0 +1,2411 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/reactjs/react-docgen#readme">react-docgen (v2.14.1)</a>
+</h1>
+<h4>A CLI and toolkit to extract information from React components for documentation generation.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-docgen">module react-docgen</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.parse">
+            function <span class="apidocSignatureSpan">react-docgen.</span>parse
+            <span class="apidocSignatureSpan">( // eslint-disable-line no-unused-vars src, resolver, // eslint-disable-line no-shadow handlers // eslint-disable-line no-shadow )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-docgen.</span>defaultHandlers</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-docgen.</span>handlers</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-docgen.</span>resolver</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-docgen.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-docgen.</span>utils.docblock</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-docgen.defaultHandlers">module react-docgen.defaultHandlers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.0">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>0
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.1">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>1
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.2">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>2
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.3">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>3
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.4">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>4
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.5">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>5
+            <span class="apidocSignatureSpan">(documentation, componentDefinition)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.6">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>6
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.7">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>7
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.8">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>8
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.defaultHandlers.9">
+            function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>9
+            <span class="apidocSignatureSpan">(documentation)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-docgen.handlers">module react-docgen.handlers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.componentDocblockHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>componentDocblockHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.componentMethodsHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>componentMethodsHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.componentMethodsJsDocHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>componentMethodsJsDocHandler
+            <span class="apidocSignatureSpan">(documentation)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.defaultPropsHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>defaultPropsHandler
+            <span class="apidocSignatureSpan">(documentation, componentDefinition)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.displayNameHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>displayNameHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.flowTypeDocBlockHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>flowTypeDocBlockHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.flowTypeHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>flowTypeHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.propDocBlockHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>propDocBlockHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.propTypeCompositionHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>propTypeCompositionHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.handlers.propTypeHandler">
+            function <span class="apidocSignatureSpan">react-docgen.handlers.</span>propTypeHandler
+            <span class="apidocSignatureSpan">(documentation, path)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-docgen.resolver">module react-docgen.resolver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.resolver.findAllComponentDefinitions">
+            function <span class="apidocSignatureSpan">react-docgen.resolver.</span>findAllComponentDefinitions
+            <span class="apidocSignatureSpan">(ast, recast)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.resolver.findAllExportedComponentDefinitions">
+            function <span class="apidocSignatureSpan">react-docgen.resolver.</span>findAllExportedComponentDefinitions
+            <span class="apidocSignatureSpan">(ast, recast)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.resolver.findExportedComponentDefinition">
+            function <span class="apidocSignatureSpan">react-docgen.resolver.</span>findExportedComponentDefinition
+            <span class="apidocSignatureSpan">(ast, recast)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-docgen.utils">module react-docgen.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getClassMemberValuePath">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getClassMemberValuePath
+            <span class="apidocSignatureSpan">(classDefinition, memberName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getFlowType">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getFlowType
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getFlowTypeFromReactComponent">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getFlowTypeFromReactComponent
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getMemberExpressionRoot">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMemberExpressionRoot
+            <span class="apidocSignatureSpan">(memberExpressionPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getMemberValuePath">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMemberValuePath
+            <span class="apidocSignatureSpan">(componentDefinition, memberName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getMembers">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMembers
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getMethodDocumentation">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMethodDocumentation
+            <span class="apidocSignatureSpan">(methodPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getNameOrValue">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getNameOrValue
+            <span class="apidocSignatureSpan">(path, raw)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getParameterName">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getParameterName
+            <span class="apidocSignatureSpan">(parameterPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getPropType">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getPropType
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getPropertyName">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getPropertyName
+            <span class="apidocSignatureSpan">(propertyPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getPropertyValuePath">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getPropertyValuePath
+            <span class="apidocSignatureSpan">(path, propertyName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.getTypeAnnotation">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>getTypeAnnotation
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.isExportsOrModuleAssignment">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>isExportsOrModuleAssignment
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.isReactComponentClass">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactComponentClass
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.isReactComponentMethod">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactComponentMethod
+            <span class="apidocSignatureSpan">(methodPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.isReactCreateClassCall">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactCreateClassCall
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.isReactModuleName">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactModuleName
+            <span class="apidocSignatureSpan">(moduleName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.isStatelessComponent">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>isStatelessComponent
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.match">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>match
+            <span class="apidocSignatureSpan">(node, pattern)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.normalizeClassDefinition">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>normalizeClassDefinition
+            <span class="apidocSignatureSpan">(classDefinition)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.normalizeClassDefiniton">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>normalizeClassDefiniton
+            <span class="apidocSignatureSpan">(classDefinition)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.printValue">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>printValue
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.resolveExportDeclaration">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>resolveExportDeclaration
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.resolveToModule">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>resolveToModule
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.resolveToValue">
+            function <span class="apidocSignatureSpan">react-docgen.utils.</span>resolveToValue
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-docgen.utils.</span>docblock</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-docgen.utils.docblock">module react-docgen.utils.docblock</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.docblock.getDocblock">
+            function <span class="apidocSignatureSpan">react-docgen.utils.docblock.</span>getDocblock
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-docgen.utils.docblock.getDoclets">
+            function <span class="apidocSignatureSpan">react-docgen.utils.docblock.</span>getDoclets
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-docgen" id="apidoc.module.react-docgen">module react-docgen</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.parse" id="apidoc.element.react-docgen.parse">
+        function <span class="apidocSignatureSpan">react-docgen.</span>parse
+        <span class="apidocSignatureSpan">( // eslint-disable-line no-unused-vars src, resolver, // eslint-disable-line no-shadow handlers // eslint-disable-line no-shadow )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultParse( // eslint-disable-line no-unused-vars src, resolver, // eslint-disable-line no-shadow handlers // eslint-disable-line no-shadow ) {
+  if (!resolver) {
+    resolver = defaultResolver;
+  }
+  if (!handlers) {
+    handlers = defaultHandlers;
+  }
+
+  return (0, _parse2.default)(src, resolver, handlers);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## API
+
+The tool can be used programmatically to extract component information and customize the extraction process:
+
+```js
+var reactDocs = require('react-docgen');
+var componentInfo = reactDocs.<span class="apidocCodeKeywordSpan">parse</span>(src);
+```
+
+As with the CLI, this will look for the exported component created through `React.createClass` or a class definition in the provided
+ source. The whole process of analyzing the source code is separated into two parts:
+
+- Locating/finding the nodes in the AST which define the component
+- Extracting information from those nodes
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-docgen.defaultHandlers" id="apidoc.module.react-docgen.defaultHandlers">module react-docgen.defaultHandlers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.0" id="apidoc.element.react-docgen.defaultHandlers.0">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>0
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function propTypeHandler(documentation, path) {
+  var propTypesPath = (0, _getMemberValuePath2.default)(path, 'propTypes');
+  if (!propTypesPath) {
+    return;
+  }
+  propTypesPath = (0, _resolveToValue2.default)(propTypesPath);
+  if (!propTypesPath) {
+    return;
+  }
+  amendPropTypes(documentation, propTypesPath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.1" id="apidoc.element.react-docgen.defaultHandlers.1">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>1
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function propTypeCompositionHandler(documentation, path) {
+  var propTypesPath = (0, _getMemberValuePath2.default)(path, 'propTypes');
+  if (!propTypesPath) {
+    return;
+  }
+  propTypesPath = (0, _resolveToValue2.default)(propTypesPath);
+  if (!propTypesPath) {
+    return;
+  }
+
+  switch (propTypesPath.node.type) {
+    case types.ObjectExpression.name:
+      processObjectExpression(documentation, propTypesPath);
+      break;
+    default:
+      amendComposes(documentation, propTypesPath);
+      break;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.2" id="apidoc.element.react-docgen.defaultHandlers.2">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>2
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function propDocBlockHandler(documentation, path) {
+  var propTypesPath = (0, _getMemberValuePath2.default)(path, 'propTypes');
+  if (!propTypesPath) {
+    return;
+  }
+  propTypesPath = (0, _resolveToValue2.default)(propTypesPath);
+  if (!propTypesPath || !types.ObjectExpression.check(propTypesPath.node)) {
+    return;
+  }
+
+  propTypesPath.get('properties').each(function (propertyPath) {
+    // we only support documentation of actual properties, not spread
+    if (types.Property.check(propertyPath.node)) {
+      (0, _setPropDescription2.default)(documentation, propertyPath);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.3" id="apidoc.element.react-docgen.defaultHandlers.3">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>3
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flowTypeHandler(documentation, path) {
+  var flowTypesPath = (0, _getFlowTypeFromReactComponent2.default)(path);
+
+  if (!flowTypesPath) {
+    return;
+  }
+
+  (0, _getFlowTypeFromReactComponent.applyToFlowTypeProperties)(flowTypesPath, function (propertyPath) {
+    setPropDescriptor(documentation, propertyPath);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.4" id="apidoc.element.react-docgen.defaultHandlers.4">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>4
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flowTypeDocBlockHandler(documentation, path) {
+  var flowTypesPath = (0, _getFlowTypeFromReactComponent2.default)(path);
+
+  if (!flowTypesPath) {
+    return;
+  }
+
+  (0, _getFlowTypeFromReactComponent.applyToFlowTypeProperties)(flowTypesPath, function (propertyPath) {
+    return (0, _setPropDescription2.default)(documentation, propertyPath);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.5" id="apidoc.element.react-docgen.defaultHandlers.5">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>5
+        <span class="apidocSignatureSpan">(documentation, componentDefinition)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultPropsHandler(documentation, componentDefinition) {
+  var statelessProps = null;
+  var defaultPropsPath = getDefaultPropsPath(componentDefinition);
+  if ((0, _isStatelessComponent2.default)(componentDefinition)) {
+    statelessProps = getStatelessPropsPath(componentDefinition);
+  }
+
+  // Do both statelessProps and defaultProps if both are available so defaultProps can override
+  if (statelessProps &amp;&amp; types.ObjectPattern.check(statelessProps.node)) {
+    getDefaultValuesFromProps(statelessProps.get('properties'), documentation, true);
+  }
+  if (defaultPropsPath &amp;&amp; types.ObjectExpression.check(defaultPropsPath.node)) {
+    getDefaultValuesFromProps(defaultPropsPath.get('properties'), documentation, false);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.6" id="apidoc.element.react-docgen.defaultHandlers.6">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>6
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDocblockHandler(documentation, path) {
+  var description = null;
+  // Find parent statement (e.g. var Component = React.createClass(&lt;path&gt;);)
+  var searchPath = path;
+  while (searchPath &amp;&amp; !types.Statement.check(searchPath.node)) {
+    searchPath = searchPath.parent;
+  }
+  if (searchPath) {
+    // If the parent is an export statement, we have to traverse one more up
+    if (types.ExportNamedDeclaration.check(searchPath.parentPath.node) || types.ExportDefaultDeclaration.check(searchPath.parentPath
+.node)) {
+      searchPath = searchPath.parentPath;
+    }
+    description = (0, _docblock.getDocblock)(searchPath);
+  }
+  if (description == null &amp;&amp; isClassDefinition(path)) {
+    // If we have a class declaration or expression, then the comment might be
+    // attached to the first decorator instead.
+    if (path.node.decorators &amp;&amp; path.node.decorators.length &gt; 0) {
+      description = (0, _docblock.getDocblock)(path.get('decorators', 0));
+    }
+  }
+  if (description == null) {
+    // If this is the first statement in the module body, the comment is attached
+    // to the program node
+    var programPath = searchPath;
+    while (programPath &amp;&amp; !types.Program.check(programPath.node)) {
+      programPath = programPath.parent;
+    }
+    if (programPath.get('body', 0) === searchPath) {
+      description = (0, _docblock.getDocblock)(programPath);
+    }
+  }
+  documentation.set('description', description || '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.7" id="apidoc.element.react-docgen.defaultHandlers.7">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>7
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function displayNameHandler(documentation, path) {
+  var displayNamePath = (0, _getMemberValuePath2.default)(path, 'displayName');
+  if (!displayNamePath) {
+    return;
+  }
+  displayNamePath = (0, _resolveToValue2.default)(displayNamePath);
+
+  // If display name is defined as a getter we get a function expression as
+  // value. In that case we try to determine the value from the return
+  // statement.
+  if (types.FunctionExpression.check(displayNamePath.node)) {
+    (0, _traverse.traverseShallow)(displayNamePath.get('body'), {
+      visitReturnStatement: function visitReturnStatement(path) {
+        displayNamePath = (0, _resolveToValue2.default)(path.get('argument'));
+        return false;
+      }
+    });
+  }
+  if (!displayNamePath || !types.Literal.check(displayNamePath.node)) {
+    return;
+  }
+  documentation.set('displayName', displayNamePath.node.value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.8" id="apidoc.element.react-docgen.defaultHandlers.8">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>8
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentMethodsHandler(documentation, path) {
+  // Extract all methods from the class or object.
+  var methodPaths = [];
+  if ((0, _isReactComponentClass2.default)(path)) {
+    methodPaths = path.get('body', 'body').filter(function (p) {
+      return types.MethodDefinition.check(p.node) &amp;&amp; p.node.kind !== 'constructor';
+    });
+  } else if (types.ObjectExpression.check(path.node)) {
+    methodPaths = path.get('properties').filter(isFunctionExpression);
+
+    // Add the statics object properties.
+    var statics = (0, _getMemberValuePath2.default)(path, 'statics');
+    if (statics) {
+      statics.get('properties').each(function (p) {
+        if (isFunctionExpression(p)) {
+          p.node.static = true;
+          methodPaths.push(p);
+        }
+      });
+    }
+  }
+
+  var methods = getMethodsDoc(methodPaths);
+  documentation.set('methods', methods);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.defaultHandlers.9" id="apidoc.element.react-docgen.defaultHandlers.9">
+        function <span class="apidocSignatureSpan">react-docgen.defaultHandlers.</span>9
+        <span class="apidocSignatureSpan">(documentation)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentMethodsJsDocHandler(documentation) {
+  var methods = documentation.get('methods');
+  if (!methods) {
+    return;
+  }
+
+  methods = methods.map(function (method) {
+    if (!method.docblock) {
+      return method;
+    }
+
+    var jsDoc = (0, _parseJsDoc2.default)(method.docblock);
+
+    var returns = merge(jsDoc.returns, method.returns);
+    var params = method.params.map(function (param) {
+      var jsDocParam = jsDoc.params.find(function (p) {
+        return p.name === param.name;
+      });
+      return merge(jsDocParam, param);
+    });
+
+    return (0, _extends3.default)({}, method, {
+      description: jsDoc.description || null,
+      returns: returns,
+      params: params
+    });
+  });
+
+  documentation.set('methods', methods);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-docgen.handlers" id="apidoc.module.react-docgen.handlers">module react-docgen.handlers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.componentDocblockHandler" id="apidoc.element.react-docgen.handlers.componentDocblockHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>componentDocblockHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentDocblockHandler(documentation, path) {
+  var description = null;
+  // Find parent statement (e.g. var Component = React.createClass(&lt;path&gt;);)
+  var searchPath = path;
+  while (searchPath &amp;&amp; !types.Statement.check(searchPath.node)) {
+    searchPath = searchPath.parent;
+  }
+  if (searchPath) {
+    // If the parent is an export statement, we have to traverse one more up
+    if (types.ExportNamedDeclaration.check(searchPath.parentPath.node) || types.ExportDefaultDeclaration.check(searchPath.parentPath
+.node)) {
+      searchPath = searchPath.parentPath;
+    }
+    description = (0, _docblock.getDocblock)(searchPath);
+  }
+  if (description == null &amp;&amp; isClassDefinition(path)) {
+    // If we have a class declaration or expression, then the comment might be
+    // attached to the first decorator instead.
+    if (path.node.decorators &amp;&amp; path.node.decorators.length &gt; 0) {
+      description = (0, _docblock.getDocblock)(path.get('decorators', 0));
+    }
+  }
+  if (description == null) {
+    // If this is the first statement in the module body, the comment is attached
+    // to the program node
+    var programPath = searchPath;
+    while (programPath &amp;&amp; !types.Program.check(programPath.node)) {
+      programPath = programPath.parent;
+    }
+    if (programPath.get('body', 0) === searchPath) {
+      description = (0, _docblock.getDocblock)(programPath);
+    }
+  }
+  documentation.set('description', description || '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.componentMethodsHandler" id="apidoc.element.react-docgen.handlers.componentMethodsHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>componentMethodsHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentMethodsHandler(documentation, path) {
+  // Extract all methods from the class or object.
+  var methodPaths = [];
+  if ((0, _isReactComponentClass2.default)(path)) {
+    methodPaths = path.get('body', 'body').filter(function (p) {
+      return types.MethodDefinition.check(p.node) &amp;&amp; p.node.kind !== 'constructor';
+    });
+  } else if (types.ObjectExpression.check(path.node)) {
+    methodPaths = path.get('properties').filter(isFunctionExpression);
+
+    // Add the statics object properties.
+    var statics = (0, _getMemberValuePath2.default)(path, 'statics');
+    if (statics) {
+      statics.get('properties').each(function (p) {
+        if (isFunctionExpression(p)) {
+          p.node.static = true;
+          methodPaths.push(p);
+        }
+      });
+    }
+  }
+
+  var methods = getMethodsDoc(methodPaths);
+  documentation.set('methods', methods);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.componentMethodsJsDocHandler" id="apidoc.element.react-docgen.handlers.componentMethodsJsDocHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>componentMethodsJsDocHandler
+        <span class="apidocSignatureSpan">(documentation)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function componentMethodsJsDocHandler(documentation) {
+  var methods = documentation.get('methods');
+  if (!methods) {
+    return;
+  }
+
+  methods = methods.map(function (method) {
+    if (!method.docblock) {
+      return method;
+    }
+
+    var jsDoc = (0, _parseJsDoc2.default)(method.docblock);
+
+    var returns = merge(jsDoc.returns, method.returns);
+    var params = method.params.map(function (param) {
+      var jsDocParam = jsDoc.params.find(function (p) {
+        return p.name === param.name;
+      });
+      return merge(jsDocParam, param);
+    });
+
+    return (0, _extends3.default)({}, method, {
+      description: jsDoc.description || null,
+      returns: returns,
+      params: params
+    });
+  });
+
+  documentation.set('methods', methods);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.defaultPropsHandler" id="apidoc.element.react-docgen.handlers.defaultPropsHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>defaultPropsHandler
+        <span class="apidocSignatureSpan">(documentation, componentDefinition)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultPropsHandler(documentation, componentDefinition) {
+  var statelessProps = null;
+  var defaultPropsPath = getDefaultPropsPath(componentDefinition);
+  if ((0, _isStatelessComponent2.default)(componentDefinition)) {
+    statelessProps = getStatelessPropsPath(componentDefinition);
+  }
+
+  // Do both statelessProps and defaultProps if both are available so defaultProps can override
+  if (statelessProps &amp;&amp; types.ObjectPattern.check(statelessProps.node)) {
+    getDefaultValuesFromProps(statelessProps.get('properties'), documentation, true);
+  }
+  if (defaultPropsPath &amp;&amp; types.ObjectExpression.check(defaultPropsPath.node)) {
+    getDefaultValuesFromProps(defaultPropsPath.get('properties'), documentation, false);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.displayNameHandler" id="apidoc.element.react-docgen.handlers.displayNameHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>displayNameHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function displayNameHandler(documentation, path) {
+  var displayNamePath = (0, _getMemberValuePath2.default)(path, 'displayName');
+  if (!displayNamePath) {
+    return;
+  }
+  displayNamePath = (0, _resolveToValue2.default)(displayNamePath);
+
+  // If display name is defined as a getter we get a function expression as
+  // value. In that case we try to determine the value from the return
+  // statement.
+  if (types.FunctionExpression.check(displayNamePath.node)) {
+    (0, _traverse.traverseShallow)(displayNamePath.get('body'), {
+      visitReturnStatement: function visitReturnStatement(path) {
+        displayNamePath = (0, _resolveToValue2.default)(path.get('argument'));
+        return false;
+      }
+    });
+  }
+  if (!displayNamePath || !types.Literal.check(displayNamePath.node)) {
+    return;
+  }
+  documentation.set('displayName', displayNamePath.node.value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.flowTypeDocBlockHandler" id="apidoc.element.react-docgen.handlers.flowTypeDocBlockHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>flowTypeDocBlockHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flowTypeDocBlockHandler(documentation, path) {
+  var flowTypesPath = (0, _getFlowTypeFromReactComponent2.default)(path);
+
+  if (!flowTypesPath) {
+    return;
+  }
+
+  (0, _getFlowTypeFromReactComponent.applyToFlowTypeProperties)(flowTypesPath, function (propertyPath) {
+    return (0, _setPropDescription2.default)(documentation, propertyPath);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.flowTypeHandler" id="apidoc.element.react-docgen.handlers.flowTypeHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>flowTypeHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flowTypeHandler(documentation, path) {
+  var flowTypesPath = (0, _getFlowTypeFromReactComponent2.default)(path);
+
+  if (!flowTypesPath) {
+    return;
+  }
+
+  (0, _getFlowTypeFromReactComponent.applyToFlowTypeProperties)(flowTypesPath, function (propertyPath) {
+    setPropDescriptor(documentation, propertyPath);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.propDocBlockHandler" id="apidoc.element.react-docgen.handlers.propDocBlockHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>propDocBlockHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function propDocBlockHandler(documentation, path) {
+  var propTypesPath = (0, _getMemberValuePath2.default)(path, 'propTypes');
+  if (!propTypesPath) {
+    return;
+  }
+  propTypesPath = (0, _resolveToValue2.default)(propTypesPath);
+  if (!propTypesPath || !types.ObjectExpression.check(propTypesPath.node)) {
+    return;
+  }
+
+  propTypesPath.get('properties').each(function (propertyPath) {
+    // we only support documentation of actual properties, not spread
+    if (types.Property.check(propertyPath.node)) {
+      (0, _setPropDescription2.default)(documentation, propertyPath);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.propTypeCompositionHandler" id="apidoc.element.react-docgen.handlers.propTypeCompositionHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>propTypeCompositionHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function propTypeCompositionHandler(documentation, path) {
+  var propTypesPath = (0, _getMemberValuePath2.default)(path, 'propTypes');
+  if (!propTypesPath) {
+    return;
+  }
+  propTypesPath = (0, _resolveToValue2.default)(propTypesPath);
+  if (!propTypesPath) {
+    return;
+  }
+
+  switch (propTypesPath.node.type) {
+    case types.ObjectExpression.name:
+      processObjectExpression(documentation, propTypesPath);
+      break;
+    default:
+      amendComposes(documentation, propTypesPath);
+      break;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.handlers.propTypeHandler" id="apidoc.element.react-docgen.handlers.propTypeHandler">
+        function <span class="apidocSignatureSpan">react-docgen.handlers.</span>propTypeHandler
+        <span class="apidocSignatureSpan">(documentation, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function propTypeHandler(documentation, path) {
+  var propTypesPath = (0, _getMemberValuePath2.default)(path, 'propTypes');
+  if (!propTypesPath) {
+    return;
+  }
+  propTypesPath = (0, _resolveToValue2.default)(propTypesPath);
+  if (!propTypesPath) {
+    return;
+  }
+  amendPropTypes(documentation, propTypesPath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-docgen.resolver" id="apidoc.module.react-docgen.resolver">module react-docgen.resolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.resolver.findAllComponentDefinitions" id="apidoc.element.react-docgen.resolver.findAllComponentDefinitions">
+        function <span class="apidocSignatureSpan">react-docgen.resolver.</span>findAllComponentDefinitions
+        <span class="apidocSignatureSpan">(ast, recast)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findAllReactCreateClassCalls(ast, recast) {
+  var types = recast.types.namedTypes;
+  var definitions = [];
+
+  function classVisitor(path) {
+    if ((0, _isReactComponentClass2.default)(path)) {
+      (0, _normalizeClassDefinition2.default)(path);
+      definitions.push(path);
+    }
+    return false;
+  }
+
+  function statelessVisitor(path) {
+    if ((0, _isStatelessComponent2.default)(path)) {
+      definitions.push(path);
+    }
+    return false;
+  }
+
+  recast.visit(ast, {
+    visitFunctionDeclaration: statelessVisitor,
+    visitFunctionExpression: statelessVisitor,
+    visitArrowFunctionExpression: statelessVisitor,
+    visitClassExpression: classVisitor,
+    visitClassDeclaration: classVisitor,
+    visitCallExpression: function visitCallExpression(path) {
+      if (!(0, _isReactCreateClassCall2.default)(path)) {
+        return false;
+      }
+      var resolvedPath = (0, _resolveToValue2.default)(path.get('arguments', 0));
+      if (types.ObjectExpression.check(resolvedPath.node)) {
+        definitions.push(resolvedPath);
+      }
+      return false;
+    }
+  });
+
+  return definitions;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.resolver.findAllExportedComponentDefinitions" id="apidoc.element.react-docgen.resolver.findAllExportedComponentDefinitions">
+        function <span class="apidocSignatureSpan">react-docgen.resolver.</span>findAllExportedComponentDefinitions
+        <span class="apidocSignatureSpan">(ast, recast)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findExportedComponentDefinitions(ast, recast) {
+  var types = recast.types.namedTypes;
+  var components = [];
+
+  function exportDeclaration(path) {
+    var definitions = (0, _resolveExportDeclaration2.default)(path, types).reduce(function (acc, definition) {
+      if (isComponentDefinition(definition)) {
+        acc.push(definition);
+      } else {
+        var resolved = (0, _resolveToValue2.default)((0, _resolveHOC2.default)(definition));
+        if (isComponentDefinition(resolved)) {
+          acc.push(resolved);
+        }
+      }
+      return acc;
+    }, []).map(function (definition) {
+      return resolveDefinition(definition, types);
+    });
+
+    if (definitions.length === 0) {
+      return false;
+    }
+    definitions.forEach(function (definition) {
+      if (definition &amp;&amp; components.indexOf(definition) === -1) {
+        components.push(definition);
+      }
+    });
+    return false;
+  }
+
+  recast.visit(ast, {
+    visitFunctionDeclaration: ignore,
+    visitFunctionExpression: ignore,
+    visitClassDeclaration: ignore,
+    visitClassExpression: ignore,
+    visitIfStatement: ignore,
+    visitWithStatement: ignore,
+    visitSwitchStatement: ignore,
+    visitCatchCause: ignore,
+    visitWhileStatement: ignore,
+    visitDoWhileStatement: ignore,
+    visitForStatement: ignore,
+    visitForInStatement: ignore,
+
+    visitExportDeclaration: exportDeclaration,
+    visitExportNamedDeclaration: exportDeclaration,
+    visitExportDefaultDeclaration: exportDeclaration,
+
+    visitAssignmentExpression: function visitAssignmentExpression(path) {
+      // Ignore anything that is not `exports.X = ...;` or
+      // `module.exports = ...;`
+      if (!(0, _isExportsOrModuleAssignment2.default)(path)) {
+        return false;
+      }
+      // Resolve the value of the right hand side. It should resolve to a call
+      // expression, something like React.createClass
+      path = (0, _resolveToValue2.default)(path.get('right'));
+      if (!isComponentDefinition(path)) {
+        path = (0, _resolveToValue2.default)((0, _resolveHOC2.default)(path));
+        if (!isComponentDefinition(path)) {
+          return false;
+        }
+      }
+      var definition = resolveDefinition(path, types);
+      if (definition &amp;&amp; components.indexOf(definition) === -1) {
+        components.push(definition);
+      }
+      return false;
+    }
+  });
+
+  return components;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.resolver.findExportedComponentDefinition" id="apidoc.element.react-docgen.resolver.findExportedComponentDefinition">
+        function <span class="apidocSignatureSpan">react-docgen.resolver.</span>findExportedComponentDefinition
+        <span class="apidocSignatureSpan">(ast, recast)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findExportedComponentDefinition(ast, recast) {
+  var types = recast.types.namedTypes;
+  var definition;
+
+  function exportDeclaration(path) {
+    var definitions = (0, _resolveExportDeclaration2.default)(path, types).reduce(function (acc, definition) {
+      if (isComponentDefinition(definition)) {
+        acc.push(definition);
+      } else {
+        var resolved = (0, _resolveToValue2.default)((0, _resolveHOC2.default)(definition));
+        if (isComponentDefinition(resolved)) {
+          acc.push(resolved);
+        }
+      }
+      return acc;
+    }, []);
+
+    if (definitions.length === 0) {
+      return false;
+    }
+    if (definitions.length &gt; 1 || definition) {
+      // If a file exports multiple components, ... complain!
+      throw new Error(ERROR_MULTIPLE_DEFINITIONS);
+    }
+    definition = resolveDefinition(definitions[0], types);
+    return false;
+  }
+
+  recast.visit(ast, {
+    visitFunctionDeclaration: ignore,
+    visitFunctionExpression: ignore,
+    visitClassDeclaration: ignore,
+    visitClassExpression: ignore,
+    visitIfStatement: ignore,
+    visitWithStatement: ignore,
+    visitSwitchStatement: ignore,
+    visitCatchCause: ignore,
+    visitWhileStatement: ignore,
+    visitDoWhileStatement: ignore,
+    visitForStatement: ignore,
+    visitForInStatement: ignore,
+
+    visitExportDeclaration: exportDeclaration,
+    visitExportNamedDeclaration: exportDeclaration,
+    visitExportDefaultDeclaration: exportDeclaration,
+
+    visitAssignmentExpression: function visitAssignmentExpression(path) {
+      // Ignore anything that is not `exports.X = ...;` or
+      // `module.exports = ...;`
+      if (!(0, _isExportsOrModuleAssignment2.default)(path)) {
+        return false;
+      }
+      // Resolve the value of the right hand side. It should resolve to a call
+      // expression, something like React.createClass
+      path = (0, _resolveToValue2.default)(path.get('right'));
+      if (!isComponentDefinition(path)) {
+        path = (0, _resolveToValue2.default)((0, _resolveHOC2.default)(path));
+        if (!isComponentDefinition(path)) {
+          return false;
+        }
+      }
+      if (definition) {
+        // If a file exports multiple components, ... complain!
+        throw new Error(ERROR_MULTIPLE_DEFINITIONS);
+      }
+      definition = resolveDefinition(path, types);
+      return false;
+    }
+  });
+
+  return definition;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-docgen.utils" id="apidoc.module.react-docgen.utils">module react-docgen.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getClassMemberValuePath" id="apidoc.element.react-docgen.utils.getClassMemberValuePath">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getClassMemberValuePath
+        <span class="apidocSignatureSpan">(classDefinition, memberName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getClassMemberValuePath(classDefinition, memberName) {
+  // Fortunately it seems like that all members of a class body, be it
+  // ClassProperty or MethodDefinition, have the same structure: They have a
+  // "key" and a "value"
+  return classDefinition.get('body', 'body').filter(function (memberPath) {
+    return (!memberPath.node.computed || types.Literal.check(memberPath.node.key)) &amp;&amp; (0, _getNameOrValue2.default)(memberPath.get
+('key')) === memberName &amp;&amp; memberPath.node.kind !== 'set';
+  }).map(function (memberPath) {
+    return memberPath.get('value');
+  })[0];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getFlowType" id="apidoc.element.react-docgen.utils.getFlowType">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getFlowType
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getFlowType(path) {
+  var node = path.node;
+  var type = void 0;
+
+  if (types.Type.check(node)) {
+    if (node.type in flowTypes) {
+      type = { name: flowTypes[node.type] };
+    } else if (node.type in flowLiteralTypes) {
+      type = { name: 'literal', value: node.raw || '' + node.value };
+    } else if (node.type in namedTypes) {
+      type = namedTypes[node.type](path);
+    }
+  }
+
+  if (!type) {
+    type = { name: 'unknown' };
+  }
+
+  return type;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getFlowTypeFromReactComponent" id="apidoc.element.react-docgen.utils.getFlowTypeFromReactComponent">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getFlowTypeFromReactComponent
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFlowTypeFromReactComponent = function (path) {
+  var typePath = void 0;
+
+  if ((0, _isReactComponentClass2.default)(path)) {
+    var superTypes = path.get('superTypeParameters');
+
+    if (superTypes.value) {
+      typePath = superTypes.get('params').get(1);
+    } else {
+      var propsMemberPath = (0, _getMemberValuePath2.default)(path, 'props');
+      if (!propsMemberPath) {
+        return null;
+      }
+
+      typePath = (0, _getTypeAnnotation2.default)(propsMemberPath.parentPath);
+    }
+  } else if ((0, _isStatelessComponent2.default)(path)) {
+    var param = path.get('params').get(0);
+
+    typePath = (0, _getTypeAnnotation2.default)(param);
+  }
+
+  if (typePath &amp;&amp; types.GenericTypeAnnotation.check(typePath.node)) {
+    typePath = (0, _resolveToValue2.default)(typePath.get('id'));
+    if (!typePath || types.Identifier.check(typePath.node) || (0, _isUnreachableFlowType2.default)(typePath)) {
+      return;
+    }
+
+    typePath = typePath.get('right');
+  }
+
+  return typePath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getMemberExpressionRoot" id="apidoc.element.react-docgen.utils.getMemberExpressionRoot">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMemberExpressionRoot
+        <span class="apidocSignatureSpan">(memberExpressionPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMemberExpressionRoot(memberExpressionPath) {
+  do {
+    memberExpressionPath = memberExpressionPath.get('object');
+  } while (types.MemberExpression.check(memberExpressionPath.node));
+  return memberExpressionPath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getMemberValuePath" id="apidoc.element.react-docgen.utils.getMemberValuePath">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMemberValuePath
+        <span class="apidocSignatureSpan">(componentDefinition, memberName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMemberValuePath(componentDefinition, memberName) {
+  if (!isSupportedDefinitionType(componentDefinition)) {
+    throw new TypeError('Got unsupported definition type. Definition must be one of ' + 'ObjectExpression, ClassDeclaration, ClassExpression
+,' + 'VariableDeclaration, ArrowFunctionExpression, FunctionExpression, or ' + 'FunctionDeclaration. Got "' + componentDefinition
+.node.type + '"' + 'instead.');
+  }
+
+  var lookupMethod = LOOKUP_METHOD[componentDefinition.node.type];
+  var result = lookupMethod(componentDefinition, memberName);
+  if (!result &amp;&amp; SYNONYMS[memberName]) {
+    return lookupMethod(componentDefinition, SYNONYMS[memberName]);
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getMembers" id="apidoc.element.react-docgen.utils.getMembers">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMembers
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMembers(path) {
+  var includeRoot = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : false;
+
+  var result = [];
+  var argumentsPath = null;
+  loop: while (true) {
+    // eslint-disable-line no-constant-condition
+    switch (true) {
+      case types.MemberExpression.check(path.node):
+        result.push({
+          path: path.get('property'),
+          computed: path.node.computed,
+          argumentsPath: argumentsPath
+        });
+        argumentsPath = null;
+        path = path.get('object');
+        break;
+      case types.CallExpression.check(path.node):
+        argumentsPath = path.get('arguments');
+        path = path.get('callee');
+        break;
+      default:
+        break loop;
+    }
+  }
+  if (includeRoot &amp;&amp; result.length &gt; 0) {
+    result.push({
+      path: path,
+      computed: false,
+      argumentsPath: argumentsPath
+    });
+  }
+  return result.reverse();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getMethodDocumentation" id="apidoc.element.react-docgen.utils.getMethodDocumentation">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getMethodDocumentation
+        <span class="apidocSignatureSpan">(methodPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getMethodDocumentation(methodPath) {
+  var name = (0, _getPropertyName2.default)(methodPath);
+  var docblock = (0, _docblock.getDocblock)(methodPath);
+
+  return {
+    name: name,
+    docblock: docblock,
+    modifiers: getMethodModifiers(methodPath),
+    params: getMethodParamsDoc(methodPath),
+    returns: getMethodReturnDoc(methodPath)
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getNameOrValue" id="apidoc.element.react-docgen.utils.getNameOrValue">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getNameOrValue
+        <span class="apidocSignatureSpan">(path, raw)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getNameOrValue(path, raw) {
+  var node = path.node;
+  switch (node.type) {
+    case types.Identifier.name:
+      return node.name;
+    case types.Literal.name:
+      return raw ? node.raw : node.value;
+    default:
+      throw new TypeError('Argument must be an Identifier or a Literal');
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getParameterName" id="apidoc.element.react-docgen.utils.getParameterName">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getParameterName
+        <span class="apidocSignatureSpan">(parameterPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getParameterName(parameterPath) {
+  switch (parameterPath.node.type) {
+    case types.Identifier.name:
+      return parameterPath.node.name;
+    case types.AssignmentPattern.name:
+      return getParameterName(parameterPath.get('left'));
+    case types.ObjectPattern.name:
+      return (0, _printValue2.default)(parameterPath);
+    case types.RestElement.name:
+      return '...' + getParameterName(parameterPath.get('argument'));
+    default:
+      throw new TypeError('Parameter name must be an Identifier, an AssignmentPattern an ' + ('ObjectPattern or a RestElement, got
+ ' + parameterPath.node.type));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getPropType" id="apidoc.element.react-docgen.utils.getPropType">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getPropType
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPropType(path) {
+  var descriptor;
+  (0, _getMembers2.default)(path, true).some(function (member) {
+    var node = member.path.node;
+    var name;
+    if (types.Literal.check(node)) {
+      name = node.value;
+    } else if (types.Identifier.check(node) &amp;&amp; !member.computed) {
+      name = node.name;
+    }
+    if (name) {
+      if (simplePropTypes.hasOwnProperty(name)) {
+        descriptor = { name: name };
+        return true;
+      } else if (propTypes.hasOwnProperty(name) &amp;&amp; member.argumentsPath) {
+        descriptor = propTypes[name](member.argumentsPath.get(0));
+        return true;
+      }
+    }
+  });
+  if (!descriptor) {
+    var node = path.node;
+    if (types.Identifier.check(node) &amp;&amp; simplePropTypes.hasOwnProperty(node.name)) {
+      descriptor = { name: node.name };
+    } else if (types.CallExpression.check(node) &amp;&amp; types.Identifier.check(node.callee) &amp;&amp; propTypes.hasOwnProperty(node.callee.name
+)) {
+      descriptor = propTypes[node.callee.name](path.get('arguments', 0));
+    } else {
+      descriptor = { name: 'custom', raw: (0, _printValue2.default)(path) };
+    }
+  }
+  return descriptor;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getPropertyName" id="apidoc.element.react-docgen.utils.getPropertyName">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getPropertyName
+        <span class="apidocSignatureSpan">(propertyPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPropertyName(propertyPath) {
+  if (propertyPath.node.computed) {
+    throw new TypeError('Propery name must be an Identifier or a Literal');
+  }
+
+  return (0, _getNameOrValue2.default)(propertyPath.get('key'), false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getPropertyValuePath" id="apidoc.element.react-docgen.utils.getPropertyValuePath">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getPropertyValuePath
+        <span class="apidocSignatureSpan">(path, propertyName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPropertyValuePath(path, propertyName) {
+  types.ObjectExpression.assert(path.node);
+
+  return path.get('properties').filter(function (propertyPath) {
+    return (0, _getPropertyName2.default)(propertyPath) === propertyName;
+  }).map(function (propertyPath) {
+    return propertyPath.get('value');
+  })[0];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.getTypeAnnotation" id="apidoc.element.react-docgen.utils.getTypeAnnotation">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>getTypeAnnotation
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getTypeAnnotation(path) {
+  if (!hasTypeAnnotation(path)) return null;
+
+  var resultPath = path;
+  do {
+    resultPath = resultPath.get('typeAnnotation');
+  } while (hasTypeAnnotation(resultPath) &amp;&amp; !types.Type.check(resultPath.node));
+
+  return resultPath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.isExportsOrModuleAssignment" id="apidoc.element.react-docgen.utils.isExportsOrModuleAssignment">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>isExportsOrModuleAssignment
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isExportsOrModuleAssignment(path) {
+  if (types.ExpressionStatement.check(path.node)) {
+    path = path.get('expression');
+  }
+  if (!types.AssignmentExpression.check(path.node) || !types.MemberExpression.check(path.node.left)) {
+    return false;
+  }
+
+  var exprArr = expressionTo.Array(path.get('left'));
+  return exprArr[0] === 'module' &amp;&amp; exprArr[1] === 'exports' || exprArr[0] === 'exports';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.isReactComponentClass" id="apidoc.element.react-docgen.utils.isReactComponentClass">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactComponentClass
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isReactComponentClass(path) {
+  var node = path.node;
+  if (!types.ClassDeclaration.check(node) &amp;&amp; !types.ClassExpression.check(node)) {
+    return false;
+  }
+
+  // render method
+  if (node.body.body.some(isRenderMethod)) {
+    return true;
+  }
+
+  // extends ReactComponent?
+  if (!node.superClass) {
+    return false;
+  }
+  var superClass = (0, _resolveToValue2.default)(path.get('superClass'));
+  if (!(0, _match2.default)(superClass.node, { property: { name: 'Component' } })) {
+    return false;
+  }
+  var module = (0, _resolveToModule2.default)(superClass);
+  return !!module &amp;&amp; (0, _isReactModuleName2.default)(module);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.isReactComponentMethod" id="apidoc.element.react-docgen.utils.isReactComponentMethod">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactComponentMethod
+        <span class="apidocSignatureSpan">(methodPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isReactComponentMethod = function (methodPath) {
+  if (!types.MethodDefinition.check(methodPath.node) &amp;&amp; !types.Property.check(methodPath.node)) {
+    return false;
+  }
+
+  var name = (0, _getPropertyName2.default)(methodPath);
+  return componentMethods.indexOf(name) !== -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.isReactCreateClassCall" id="apidoc.element.react-docgen.utils.isReactCreateClassCall">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactCreateClassCall
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isReactCreateClassCall(path) {
+  if (types.ExpressionStatement.check(path.node)) {
+    path = path.get('expression');
+  }
+
+  if (!(0, _match2.default)(path.node, { callee: { property: { name: 'createClass' } } })) {
+    return false;
+  }
+  var module = (0, _resolveToModule2.default)(path.get('callee', 'object'));
+  return Boolean(module &amp;&amp; (0, _isReactModuleName2.default)(module));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.isReactModuleName" id="apidoc.element.react-docgen.utils.isReactModuleName">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>isReactModuleName
+        <span class="apidocSignatureSpan">(moduleName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isReactModuleName(moduleName) {
+  return reactModules.some(function (reactModuleName) {
+    return reactModuleName === moduleName.toLowerCase();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.isStatelessComponent" id="apidoc.element.react-docgen.utils.isStatelessComponent">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>isStatelessComponent
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isStatelessComponent(path) {
+  var node = path.node;
+
+  if (validPossibleStatelessComponentTypes.indexOf(node.type) === -1) {
+    return false;
+  }
+
+  if (node.type === 'Property') {
+    if ((0, _isReactCreateClassCall2.default)(path.parent) || (0, _isReactComponentClass2.default)(path.parent)) {
+      return false;
+    }
+  }
+
+  if (returnsJSXElementOrReactCreateElementCall(path)) {
+    return true;
+  }
+
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.match" id="apidoc.element.react-docgen.utils.match">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>match
+        <span class="apidocSignatureSpan">(node, pattern)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function match(node, pattern) {
+  if (!node) {
+    return false;
+  }
+  for (var prop in pattern) {
+    if (!node[prop]) {
+      return false;
+    }
+    if (pattern[prop] &amp;&amp; (0, _typeof3.default)(pattern[prop]) === 'object') {
+      if (!match(node[prop], pattern[prop])) {
+        return false;
+      }
+    } else if (node[prop] !== pattern[prop]) {
+      return false;
+    }
+  }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.normalizeClassDefinition" id="apidoc.element.react-docgen.utils.normalizeClassDefinition">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>normalizeClassDefinition
+        <span class="apidocSignatureSpan">(classDefinition)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function normalizeClassDefinition(classDefinition) {
+  var variableName;
+  if (types.ClassDeclaration.check(classDefinition.node)) {
+    variableName = classDefinition.node.id.name;
+  } else if (types.ClassExpression.check(classDefinition.node)) {
+    var parentPath = classDefinition.parentPath;
+
+    while (parentPath.node !== classDefinition.scope.node &amp;&amp; !types.BlockStatement.check(parentPath.node)) {
+      if (types.VariableDeclarator.check(parentPath.node) &amp;&amp; types.Identifier.check(parentPath.node.id)) {
+        variableName = parentPath.node.id.name;
+        break;
+      } else if (types.AssignmentExpression.check(parentPath.node) &amp;&amp; types.Identifier.check(parentPath.node.left)) {
+        variableName = parentPath.node.left.name;
+        break;
+      }
+      parentPath = parentPath.parentPath;
+    }
+  }
+
+  if (!variableName) {
+    return;
+  }
+
+  var scopeRoot = classDefinition.scope;
+  _recast2.default.visit(scopeRoot.node, {
+    visitFunction: ignore,
+    visitClassDeclaration: ignore,
+    visitClassExpression: ignore,
+    visitForInStatement: ignore,
+    visitForStatement: ignore,
+    visitAssignmentExpression: function visitAssignmentExpression(path) {
+      if (types.MemberExpression.check(path.node.left)) {
+        var first = (0, _getMemberExpressionRoot2.default)(path.get('left'));
+        if (types.Identifier.check(first.node) &amp;&amp; first.node.name === variableName) {
+          var _getMembers = (0, _getMembers4.default)(path.get('left')),
+              _getMembers2 = (0, _slicedToArray3.default)(_getMembers, 1),
+              member = _getMembers2[0];
+
+          if (member &amp;&amp; !member.path.node.computed) {
+            var classProperty = builders.classProperty(member.path.node, path.node.right, null, true);
+            classDefinition.get('body', 'body').value.push(classProperty);
+            return false;
+          }
+        }
+        this.traverse(path);
+      } else {
+        return false;
+      }
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.normalizeClassDefiniton" id="apidoc.element.react-docgen.utils.normalizeClassDefiniton">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>normalizeClassDefiniton
+        <span class="apidocSignatureSpan">(classDefinition)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function normalizeClassDefinition(classDefinition) {
+  var variableName;
+  if (types.ClassDeclaration.check(classDefinition.node)) {
+    variableName = classDefinition.node.id.name;
+  } else if (types.ClassExpression.check(classDefinition.node)) {
+    var parentPath = classDefinition.parentPath;
+
+    while (parentPath.node !== classDefinition.scope.node &amp;&amp; !types.BlockStatement.check(parentPath.node)) {
+      if (types.VariableDeclarator.check(parentPath.node) &amp;&amp; types.Identifier.check(parentPath.node.id)) {
+        variableName = parentPath.node.id.name;
+        break;
+      } else if (types.AssignmentExpression.check(parentPath.node) &amp;&amp; types.Identifier.check(parentPath.node.left)) {
+        variableName = parentPath.node.left.name;
+        break;
+      }
+      parentPath = parentPath.parentPath;
+    }
+  }
+
+  if (!variableName) {
+    return;
+  }
+
+  var scopeRoot = classDefinition.scope;
+  _recast2.default.visit(scopeRoot.node, {
+    visitFunction: ignore,
+    visitClassDeclaration: ignore,
+    visitClassExpression: ignore,
+    visitForInStatement: ignore,
+    visitForStatement: ignore,
+    visitAssignmentExpression: function visitAssignmentExpression(path) {
+      if (types.MemberExpression.check(path.node.left)) {
+        var first = (0, _getMemberExpressionRoot2.default)(path.get('left'));
+        if (types.Identifier.check(first.node) &amp;&amp; first.node.name === variableName) {
+          var _getMembers = (0, _getMembers4.default)(path.get('left')),
+              _getMembers2 = (0, _slicedToArray3.default)(_getMembers, 1),
+              member = _getMembers2[0];
+
+          if (member &amp;&amp; !member.path.node.computed) {
+            var classProperty = builders.classProperty(member.path.node, path.node.right, null, true);
+            classDefinition.get('body', 'body').value.push(classProperty);
+            return false;
+          }
+        }
+        this.traverse(path);
+      } else {
+        return false;
+      }
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.printValue" id="apidoc.element.react-docgen.utils.printValue">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>printValue
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function printValue(path) {
+  if (path.node.comments) {
+    path.node.comments.length = 0;
+  }
+  return _recast2.default.print(path).code;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.resolveExportDeclaration" id="apidoc.element.react-docgen.utils.resolveExportDeclaration">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>resolveExportDeclaration
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolveExportDeclaration(path) {
+  var types = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : _types;
+
+  var definitions = [];
+  if (path.node.default) {
+    definitions.push(path.get('declaration'));
+  } else if (path.node.declaration) {
+    if (types.VariableDeclaration.check(path.node.declaration)) {
+      path.get('declaration', 'declarations').each(function (declarator) {
+        return definitions.push(declarator);
+      });
+    } else {
+      definitions.push(path.get('declaration'));
+    }
+  } else if (path.node.specifiers) {
+    path.get('specifiers').each(function (specifier) {
+      return definitions.push(specifier.node.id ? specifier.get('id') : specifier.get('local'));
+    });
+  }
+  return definitions.map(function (definition) {
+    return (0, _resolveToValue2.default)(definition);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.resolveToModule" id="apidoc.element.react-docgen.utils.resolveToModule">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>resolveToModule
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolveToModule(path) {
+  var node = path.node;
+  switch (node.type) {
+    case types.VariableDeclarator.name:
+      if (node.init) {
+        return resolveToModule(path.get('init'));
+      }
+      break;
+    case types.CallExpression.name:
+      if ((0, _match2.default)(node.callee, { type: types.Identifier.name, name: 'require' })) {
+        return node.arguments[0].value;
+      }
+      return resolveToModule(path.get('callee'));
+    case types.Identifier.name:
+      var valuePath = (0, _resolveToValue2.default)(path);
+      if (valuePath !== path) {
+        return resolveToModule(valuePath);
+      }
+      break;
+    case types.ImportDeclaration.name:
+      return node.source.value;
+    case types.MemberExpression.name:
+      while (path &amp;&amp; types.MemberExpression.check(path.node)) {
+        path = path.get('object');
+      }
+      if (path) {
+        return resolveToModule(path);
+      }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.resolveToValue" id="apidoc.element.react-docgen.utils.resolveToValue">
+        function <span class="apidocSignatureSpan">react-docgen.utils.</span>resolveToValue
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolveToValue(path) {
+  var node = path.node;
+  if (types.VariableDeclarator.check(node)) {
+    if (node.init) {
+      return resolveToValue(path.get('init'));
+    }
+  } else if (types.MemberExpression.check(node)) {
+    var resolved = resolveToValue((0, _getMemberExpressionRoot2.default)(path));
+    if (types.ObjectExpression.check(resolved.node)) {
+      var memberParts = (0, _expressionTo.Array)(path).slice(1);
+      var init = memberParts.reduce(function (propertyPath, propertyName) {
+        propertyPath = resolveToValue(propertyPath);
+        return types.ObjectExpression.check(propertyPath.node) ? (0, _getPropertyValuePath2.default)(propertyPath, propertyName) :
+null;
+      }, resolved);
+      return init ? resolveToValue(init) : path;
+    }
+  } else if (types.ImportDefaultSpecifier.check(node) || types.ImportNamespaceSpecifier.check(node) || types.ImportSpecifier.check
+(node)) {
+    return path.parentPath;
+  } else if (types.AssignmentExpression.check(node)) {
+    if (node.operator === '=') {
+      return resolveToValue(path.get('right'));
+    }
+  } else if (types.Identifier.check(node)) {
+    if ((types.ClassDeclaration.check(path.parentPath.node) || types.ClassExpression.check(path.parentPath.node) || types.Function
+.check(path.parentPath.node)) &amp;&amp; path.parentPath.get('id') === path) {
+      return path.parentPath;
+    }
+
+    var scope = path.scope.lookup(node.name);
+    var resolvedPath = void 0;
+    if (scope) {
+      // The variable may be assigned a different value after initialization.
+      // We are first trying to find all assignments to the variable in the
+      // block where it is defined (i.e. we are not traversing into statements)
+      resolvedPath = findLastAssignedValue(scope, node.name);
+      if (!resolvedPath) {
+        var bindings = scope.getBindings()[node.name];
+        resolvedPath = findScopePath(bindings, path);
+      }
+    } else {
+      scope = path.scope.lookupType(node.name);
+      if (scope) {
+        var _types = scope.getTypes()[node.name];
+        resolvedPath = findScopePath(_types, path);
+      }
+    }
+    return resolvedPath || path;
+  }
+
+  return path;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-docgen.utils.docblock" id="apidoc.module.react-docgen.utils.docblock">module react-docgen.utils.docblock</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.docblock.getDocblock" id="apidoc.element.react-docgen.utils.docblock.getDocblock">
+        function <span class="apidocSignatureSpan">react-docgen.utils.docblock.</span>getDocblock
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDocblock(path) {
+  var comments = [];
+  if (path.node.leadingComments) {
+    comments = path.node.leadingComments.filter(function (comment) {
+      return comment.type === 'CommentBlock' &amp;&amp; DOCBLOCK_HEADER.test(comment.value);
+    });
+  } else if (path.node.comments) {
+    comments = path.node.comments.filter(function (comment) {
+      return comment.leading &amp;&amp; comment.type === 'CommentBlock' &amp;&amp; DOCBLOCK_HEADER.test(comment.value);
+    });
+  }
+
+  if (comments.length &gt; 0) {
+    return parseDocblock(comments[comments.length - 1].value);
+  }
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-docgen.utils.docblock.getDoclets" id="apidoc.element.react-docgen.utils.docblock.getDoclets">
+        function <span class="apidocSignatureSpan">react-docgen.utils.docblock.</span>getDoclets
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDoclets(str) {
+  var doclets = (0, _create2.default)(null);
+  var match = DOCLET_PATTERN.exec(str);
+
+  for (; match; match = DOCLET_PATTERN.exec(str)) {
+    doclets[match[1]] = match[2] || true;
+  }
+
+  return doclets;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
